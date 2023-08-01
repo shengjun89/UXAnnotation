@@ -10,6 +10,9 @@
 
 以上变量可根据实际需要自行调整或开发为插件，have fun！
 
+
+![uxannotion](uxannotion.gif)
+
 ```javascript
 
 /需要首选选中序列编号
@@ -125,3 +128,6 @@ figma.viewport.scrollAndZoomIntoView(figma.currentPage.selection);
 figma.notify(`✅ 成功更新 ${figma.currentPage.selection.length} 个画布`)
 
  
+
+
+[def]: uxannotion.gif
