@@ -15,16 +15,20 @@
 
 ```javascript
 
-/需要首选选中序列编号
 //添加交互注释
 let num = 3;
+//num--多少条默认占位批注
+let randomContent = ["⭐️始终创业⭐️","⭐️多元兼容⭐️","⭐️坦诚清晰⭐️","⭐️求真务实⭐️","⭐️敢为极致⭐️","⭐️共同成长⭐️"]
+//randomContent--随机填充的内容
+let gutter = 240;
+//gutter--和画布的间距
+
 
 let res = [];
 let pageCountArr = [];
 let noteArr = [];
-let gutter = 240;
 let pageCountWidthArr = [];
-let randomContent = ["⭐️始终创业⭐️","⭐️多元兼容⭐️","⭐️坦诚清晰⭐️","⭐️求真务实⭐️","⭐️敢为极致⭐️","⭐️共同成长⭐️"]
+
 
 selection().forEach((n, i) => {
 	//创建数组，保存选中对象的Y坐标，使画布和标记元素纵向对齐
